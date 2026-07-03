@@ -1,0 +1,19 @@
+apiVersion: openchoreo.dev/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    openchoreo.dev/description: Prebuilt http-echo demo component for GitOps testing
+    openchoreo.dev/display-name: GitOps Demo
+  finalizers:
+  - openchoreo.dev/component-cleanup
+  labels:
+    openchoreo.dev/project: default
+  name: gitops-demo
+  namespace: default
+spec:
+  autoDeploy: true
+  componentType:
+    kind: ClusterComponentType
+    name: deployment/service
+  owner:
+    projectName: default
