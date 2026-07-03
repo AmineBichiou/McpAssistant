@@ -3,7 +3,7 @@ kind: Component
 metadata:
   annotations:
     openchoreo.dev/description: Prebuilt http-echo demo component for GitOps testing
-    openchoreo.dev/display-name: GitOps Demo
+    openchoreo.dev/display-name: GitOps Demo v2
   finalizers:
   - openchoreo.dev/component-cleanup
   labels:
